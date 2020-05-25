@@ -16,3 +16,11 @@ if($myip == $remoteaddr){
 
 
 ?>
+
+
+
+<?php foreach($_SERVER as $key => $value)
+ {
+ echo "<b>".$key.":</b> ".$value."\n"."<BR />";
+ }
+?> 
