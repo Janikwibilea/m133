@@ -8,8 +8,7 @@ if($i = fopen($file, 'r')){
 }
 
 $passwort = $line;
-$hash = password_hash($passwort, PASSWORD_DEFAULT);
-$gespeicherter_hash = '$2y$10$VFS61IAcoKnGk3nzD0j5I.2O/or5lLcH/tuTjBINIsNHFvoFqbRYq';
+$gespeicherter_hash = password_hash($passwort, PASSWORD_DEFAULT);
 
 
 if(password_verify($passwort, $gespeicherter_hash) )
